@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录页</title>
+<link t type="text/css" href="denglu.css" rel="stylesheet" />
+</head>
+<style>
+*{ margin:0; padding:0px;}
+#body2{ margin:0 auto; width:1000px; font-family:"微软雅黑", "宋体";}
+#header{width:1000px; height:90px; margin:0 auto;}
+#header .logo1 {margin:25px 10px auto 10px;}
+#header .logo2{ margin-left:15px; }
+
+#bg{ background:url(pic/dengluye/content.png) no-repeat; background-position:center; height:470px; border-top:1px #E1E1E1 solid;}
+
+#content { width:1000px; height:520px; margin-top:-470px;}
+
+#content .contentleft a{ display:block;width:500px; height:380px;}
+#content .denglukuang{  background:url(pic/dengluye/denglukuang.gif); width:494px; height:361px; margin:-340px 0 auto auto;}
+#content .hydl{ height:70px;padding-left:10px;}
+#content .hydl1{font-size:22px; color:#666; line-height:77px; margin-left:10px; }
+#content .hydl2{font-size:14px; margin-left:210px; color:#00F; text-decoration:none;}
+#content .hydl2:hover{ text-decoration:underline;}
+#content .denglukuang input{ display:block; height:33px; width:220px;font-weight:bold; color:#CCC; border-style:none; font-size:14px; border:none;}
+#content .denglukuang input:focus{ outline:none;}
+#content .user{ margin:36px 116px auto auto;  }
+#content .psd{ margin:21px 116px auto auto;}
+#content .userk{height:33px; width:258px; border:#E4E4E4 1px solid; margin:-89px auto auto auto; }
+#content .psdk{height:33px; width:258px; border:#E4E4E4 1px solid; margin:20px auto auto auto; }
+#content .userpic{ display:block;margin:-78px auto auto 134px;}
+#content .psdpic{ display:block;margin:45px auto auto 134px;}
+#content .tishi1{ display:block;color:#F00; font-size:12px; margin:-45px auto auto 120px;}
+#content .tishi2{ display:block;color:#F00; font-size:12px; margin:40px auto auto 120px;}
+#content .checkbox{ margin-left:15px; border:#E4E4E4 1px solid;}
+#content .mdl{ display:block;font-size:12px; margin:-24px auto auto 140px; color:#666;}
+#content .wjmm{ display:block;font-size:12px; margin:-16px auto auto 322px; color:#00F; text-decoration:none;}
+#content .dl{ display:block;margin:8px auto auto auto;}
+#content .qt{display:block;margin:33px auto auto 32px; font-size:12px; color:#666;}
+#content ul li a{ display:block;text-decoration:none;font-size:12px; color:#666; margin-top:-23px; padding-left:24px; }
+#content ul { list-style-type:none; margin:-18px auto auto 122px; }
+#content ul li{ float:left; margin-right:11px;}
+#footer{ text-align:center; height:150px; background-color:#E1E1E1; padding-top:25px; font-family:"黑体";}
+#footer p {font-size:12px;color:#666;  margin:0px auto auto auto; margin-bottom:8px;}
+#footer p a{color:#666;text-decoration:none;}
+
+</style>
+
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	var userName="123";
+	var password="123";
+  	$(".user").focus(function(){
+		
+		if($(this).val()=="邮箱/手机"){
+			$(this).val("")
+		}
+		
+	}) .blur(function(){
+		if(this.value==""){
+			$(this).val("邮箱/手机");
+		}
+	})
+   
+
+  	$(".psd").focus(function(){
+		if($(this).val()=="密码"){
+			$(this).val("")
+		}
+		
+	}) .blur(function(){
+		if(this.value==""){
+			$(this).val("密码");
+		}
+	})
+    
+	   
+	   
+	$(".dl").hover(function(){
+		$(this).attr("src","pic/dengluye/btn_active.gif");	
+			
+	},function(){
+		$(this).attr("src","pic/dengluye/btn_hover.gif");
+	})  
+	   
+	   
+
+	$(".dl").click(function(){
+		var u=$(".user").val();
+		var p=$(".psd").val();
+		
+		if(u!=userName){
+			$(".tishi1").text("用户名不存在")}
+		else
+			if(p!=password){
+				$(".tishi2").text("密码有误")}
+		    else{
+				alert("登陆成功！");
+				}
+				
+		 	}
+	)
+})
+
+
+</script>
+
+
+
+
+<body>
+
+
+
+<div id="header">
+	<img class="logo1" src="pic/dengluye/logo1.gif" />
+	<img class="logo2" src="pic/dengluye/logo2.gif" />
+</div>
+
+<div id="bg"></div>
+
+
+<div id="body2">
+<div id="content">
+
+	<div class="contentleft"><a href="#"></a></div>
+
+
+	<div class="denglukuang">
+    	<div class="hydl">
+           	<a class="hydl1" >欢迎登录海尔商城</a>  
+            <a class="hydl2" href="#">免费注册&nbsp;&gt;</a>
+        </div>
+
+		<input class="user" type="text" placeholder="邮箱/手机"/>
+		<input class="psd" type="password"  placeholder="密码"/>
+    	<div class="userk"></div>
+		<div class="psdk"></div>
+        <img class="userpic" src="pic/dengluye/user.gif" />
+        <img class="psdpic" src="pic/dengluye/password.gif" />
+        
+        <a class="tishi1">&nbsp;</a>
+        <a class="tishi2">&nbsp;</a>
+        
+        <input class="checkbox" type="checkbox"  /><a class="mdl">两周内免登录</a><a class="wjmm" href="#">忘记密码？</a>
+        
+        <img class="dl" src="pic/dengluye/btn_hover.gif" />
+        
+        <a class="qt">其他方式登录：</a>
+        <ul>
+        	<li><img src="pic/dengluye/用户登录_01.gif" /><a href="#">新浪微博</a></li>
+            <li><img src="pic/dengluye/用户登录_02.gif" /><a href="#">QQ</a></li>
+            <li><img src="pic/dengluye/用户登录_03.gif" /><a href="#">支付宝</a></li>
+            <li><img src="pic/dengluye/用户登录_04.gif" /><a href="#">网易</a></li>
+        </ul>
+        
+   </div>
+</div>
+</div>
+
+
+
+
+<div id="footer">
+	<p>
+    	<a href="#">购物流程</a> | <a href="#">配送方式</a> | <a href="#">付款方式</a> | <a href="#">售后服务</a> | <a  href="#" >投诉建议</a> |<a  href="#">友情链接</a>  <a href="#">加入我们</a> | <a href="#">海尔知识堂</a>
+    </p>
+    <p >网站备案/许可证号：<a href="#" >鲁ICP备09096283号</a></p>
+
+	<p >Copyright©2000-2014 海尔集团电子商务有限公司 All Rights Reserved</p>
+	<div class="footerpic">
+		<a  href="#"><img src="pic/index/footer/1.png"></a>
+		<a  href="#"><img src="pic/index/footer/2.png" ></a>
+		<a  href="#"><img src="pic/index/footer/3.png"></a>
+		<a  href="#"><img src="pic/index/footer/4.png"></a>
+		<a  href="#"><img src="pic/index/footer/5.png"></a>
+		<a  href="#"><img src="pic/index/footer/6.png"></a>
+		<a  href="#"><img src="pic/index/footer/7.gif"></a>
+	</div>
+</div>
+
+
+
+</body>
+</html>

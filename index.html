@@ -1,111 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>D11111111111ocument</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	 <script text="javascript" src="js/fontsize.js"></script>
-	 <link rel="stylesheet" type="text/css" href="css/style.css"> 
-	 <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
-	 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-	 <link rel="stylesheet" href="css/animate.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>李宏凯</title>
+	<script src="./js/jquery.min.js"> </script>
+	<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+
 </head>
 <body>
-	<div class="swiper-container">
-	    <div class="swiper-wrapper">
 
-	        <div class="swiper-slide page1">
-	        	<div class="page1-title1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s"></div>
-	        	<div class="page1-title2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.4s"></div>
-	        </div>
+ <div id="top-top" class="headerbg">
 
-	        <div class="swiper-slide page2">
-	        	<div class="page2-title1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s"><img src="images/page2_img1.png" alt=""></div>
-	        	<div class="page2-main ani" swiper-animate-effect="fadeIn" swiper-animate-duration="6s" swiper-animate-delay="0.3s"><img src="images/page2_main-img.png" alt=""></div>
-	        	<div class="page2-title3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">
+	   <div class="header">
 
-	        		<p>总部:东城区广渠门内大街46号</p>
+			  <div class="container">
+				   <div class="logo">
+						<a href="#"><img src="images/photo.png" style="width:34px; height:34px;border-radius:17px"/> Resume</a>
+				   </div>
 
-	        		<p>Welcome to VANCL</p>
-	        	</div>
+				  <div class="nav">
+					 <ul>
+						 <li><a class="scroll" href="#about">ABOUT</a></li>
+						 <li><a class="scroll" href="#skills">SKILLS</a></li>
+						 <li><a class="scroll" href="#port">WORKS</a></li>
+						 <li><a class="scroll" href="#contact">CONTACT</a></li>
+					 </ul>
+				 </div>
 
-	        </div>
-	        <div class="swiper-slide page3">
-	        	<div class="page3-title1 ani"  swiper-animate-effect="fadeIn" swiper-animate-duration="2s" swiper-animate-delay="0.1s"></div>
-	        	<div class="page3-title2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="2.2s" swiper-animate-delay="0.3s">
-	        		<p>VANCL（凡客成品）,</p>
-	        		<p>由卓越网创始人陈年创办于2008年</p>
-	        	</div>
-	        </div>
-	        <div class="swiper-slide page4">
-	        	<div class="page4-title1">
-	        		<div class="topimg img1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.4s" swiper-animate-delay="0.1s"></div>
-	        		<div class="topimg img2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.4s" swiper-animate-delay="0.5s"></div>
-	        		<div class="topimg img3 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.4s" swiper-animate-delay="0.9s"></div>
-	        	</div>
-	        	<div class="page4-title2 ani"  swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.0s">
+					<div class="clear"></div>
+			  </div>
 
-	        		<p class="p1">[凡客电子商务公司]</p>
-	        		<p class="p2">IN ELECTRIC COMMERCE</p>
-	        		<p class="p3">凡客诚品 (VANCL) ,互联网快时尚品牌。</p>
-	        	</div> 	        	
-	        </div>
-	        <div class="swiper-slide page5">
-	        	<div class="page5-title1">
-	        		<div class="city ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.0s" swiper-animate-delay="0.1s"></div>
-	        	</div>
-	        	<div class="page5-title2 ani" swiper-animate-effect="flipInY" swiper-animate-duration="1.0s" swiper-animate-delay="0.5s">
-	        		<p class="p1">VANCL品牌理念的核心价值。</p>
-	        		<p class="p2">-坚守真诚待客之道，</p> 
-	        		<p class="p3">以提供高性价比产品为己任。</p>
-	        		<p class="p4">-任何时候不掩饰自己的问题，</p> 
-	        		<p class="p5">坦诚面对、勇敢担当。</p>
-	        	</div>
-	        </div>
-	        <div class="swiper-slide page6">
-	        	<div class="page6-img1 ani"  swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
-	        	<div class="page6-img2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"></div>
-	        	<div class="page6-img3 ani"  swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+	   </div>
 
-	        	 <div class="page6-title2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.7s" swiper-animate-delay="0.6s">
-	        		<p>如果您对VANCL的产品有任何疑问，或对我们的服务有任何意见或建议，欢迎您直接与我们联络，我们将竭诚为您服务。</p>
-	        		<p>欢迎加入我们，凡客有你更精彩！</p>
-	        		<p class="p3">--陈年</p>
-	        	</div>
-	        </div>
-	    </div>
-	    <!-- 如果需要分页器 -->
-	    <div class="swiper-pagination"></div>
-	    
-</div>
 
-	<script type="text/javascript" src="js/zepto.min.js"></script> 
-    <script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
-    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
-    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
-    <script>
-    
-    	$(document).ready(function(){
-    		var mySwiper = new Swiper ('.swiper-container', {
-			    direction: 'vertical',
-			    initialSlide :1,
-			    
-			    
-			    // 如果需要分页器
-			    pagination: '.swiper-pagination', 
-			         
-    		//-------动画部分----------
-    		onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
-			    swiperAnimateCache(swiper); //隐藏动画元素 
-			    swiperAnimate(swiper); //初始化完成开始动画
-			  }, 
-			  onSlideChangeEnd: function(swiper){ 
-			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
-			  } 
-			 //---------------------
-			}); 
-    	})
 
-    </script>
-</body>
-</html>
+
+	   <div class="banner">
+	      <div class="container">
+		     <div class="banner-info">
+			      <div class="bannerlogo">
+					  <img src="./images/diamond.png">
+			      </div>
+			      <div class="bannerhead">
+				      <h2>姓名： <span> 李宏凯</span></h2>
+				      <h3>WEB前端开发工程师</h3>
+				      <p>WEB前端开发不仅是编程，更是艺术！</p>
+                      <p>乔布斯曾说WEB就是未来，我们作为前端开发工作者也是未来！</p>
+                      <p>相信Web前端开发的明天会更好！</p>
+					  <a class="downarrow scroll" href="#about"><span> </span></a>
+			      </div>
+			 </div>
+			 <div class="clear"></div>
+		  </div>
+	  </div>
+
+ </div>
+
+ <div class="content">
+
+	   <div id="about" class="about">
+		 <div class="container">
+			   <div class="header-section text-center">
+				  <h2><span> </span>ABOUT<span> </span></h2>
+				  </div>
+				 <span><p>本人具有强烈的学习渴望和学习能力，拥有创新意识和高度的责任心;组织管理能力强，善于与他人协同工作,拥有良好的团队精神;善于学于新技术，肯钻研，肯吃苦。
+					 我将以饱满的热情投入到工作岗位，相信您的信任和我的能力将会为我们的未来带来不一样的精彩！</p></span>
+
+			  <div class="years">
+				<h4><b>2013.9-至今</b></h4>
+				 <span><h4>大学</h4></span>
+				 <p><i>期间就读于燕山大学艺术与设计学院 工业设计专业，课程研究方向：机械产品设计、数字化设计。由于个人对数字化设计更加青睐，因此选择了网页设计和web前端这条职业道路</i></p>
+			  </div>
+
+			   <div class="years">
+				 <h4><b>2015.7-至今</b></h4>
+				 <span><h4>web学习和实习经历</h4></span>
+				 <div class="labs">
+					 <p><i>学习前端是从2015年暑假学习设计网页开始，出于好奇，自己开始钻研如何将设计好的网页投放到浏览器上，于是便逐渐接触了HTML和CSS技术，
+						 后来又拓展学习了js,jquery，html5和css3的一些技术，目前在自学react。于二零一六年四月到至今实习于秦皇岛第嘉学社传媒有限公司，
+						 期间主要从事效果图切片、css+div布局、解决浏览器bug问题、javascript和jQuery实现特效等一系列相关工作。</i></p>
+			     </div>
+			  </div>
+				 <a class="arrow scroll" href="#skills"><span> </span></a>
+		  </div>
+	  </div>
+
+	  <div id="skills" class="skills">
+	  <div class="container">
+	     <div class="skills-grids">
+			  <div class="skill-section text-center">
+				  <h2><span> </span>SKILLS<span> </span></h2>
+			  </div>
+					  <div class="services_grids">
+						  <div id="canvas">
+
+                          <div class="skill_txt">
+                         		<p>1、对Web技术创新及丰富互联网应用开发有浓厚的兴趣；</p>
+                          		<p>2、精通HTML、CSS+DIV，掌握HTML5+CSS3等网站前端技术；</p>
+                                <p>3、熟练javascript、jQuery库、Ajax等技术，能够实现网页的动态效果与页面交互；</p>
+                                <p>4、掌握响应式设计，能够制作跨平台网页，能够进行移动端页面开发；</p>
+																<p>5、掌握Photoshop及网站效果图的制作、切片以及优化；</p>
+                                <p>6、能够使用ARP完成页面原型蓝图，实现各种交互效果；</p>
+																<p>7、能够使用react框架,参与大型项目程序应用</p>
+                                <p>8、善于沟通、性格开朗、做事认真、负责。</p>
+                          </div>
+
+
+
+								<div class="skill-grids text-center">
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-1"></div>
+												 <h3>REACT</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-2"></div>
+												 <h3>JS+JQ</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-3"></div>
+												 <h3>H5+C3+响应式</h3>
+											 </div>
+										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<div class="circle" id="circles-4"></div>
+												 <h3>DIV+CSS</h3>
+											 </div>
+										</div>
+										<div class="clearfix"> </div>
+								  </div>
+						   </div>
+					  </div>
+
+					 <script type="text/javascript" src="./js/circles.js"></script>
+								 <script>
+									var colors = [
+											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
+										];
+									for (var i = 1; i <= 5; i++) {
+										var child = document.getElementById('circles-' + i),
+											percentage = 50 + (i * 10)+8;
+
+										Circles.create({
+											id:         child.id,
+											percentage: percentage,
+											radius:     80,
+											width:      15,
+											number:   	percentage,
+											text:       '%',
+											colors:     colors[i - 1]
+										});
+									}
+
+					</script>
+
+
+			 </div>
+		 </div>
+		   <a class="down scroll" href="#port"><span> </span></a>
+	  </div>
+	  </div>
+
+		 <div id="port" class="Portfolio">
+			  <div class="Portfolio-section text-center">
+			      <h2><span> </span>WORKS<span> </span></h2>
+			  </div>
+			  <div class="container">
+				  <div class="portfolio-grids">
+					  <div class="portfolio-grid col-md-4">
+						 <a href="works/电子商务网站/index.html" target="_blank"><img src="./images/monitr1.png"></a>
+						  <p>电商网站页面</p>
+						  <a class="rightarrow" href="#"><span> </span></a>
+					  </div>
+					  <div class="portfolio-grid col-md-4">
+						  <a href="works/微信H5-凡客/index.html" target="_blank"><img src="./images/monitr3.png"></a>
+						  <p>跨平台移动端响应式界面</p>
+						  <a class="rightarrow" href="#"><span> </span></a>
+					  </div>
+						<div class="portfolio-grid col-md-4">
+							<a href="works/企业网站/index.html" target="_blank"><img src="./images/monitr2.png"></a>
+							<p>企业网站页面</p>
+							<a class="rightarrow" href="#"><span> </span></a>
+						</div>
+					  <div class="clear"> </div>
+				  </div>
+				  <a class="portdown scroll" href="#contact"><span> </span></a>
+
+			  </div>
+		 </div>
+  </div>
+
+  <div  id="contact" class="footer">
+      <div class="container">
+
+		   <div class="contact-section text-center">
+			  <h2><span> </span>CONTACT<span> </span></h2>
+		  </div>
+		 <div class="row">
+
+			 <div class="col-md-6">
+				  <div class="footer-left">
+						<div class="social-icons">
+						   <a href="#"><img src="./images/phone.png"></a>
+						   <a href="#"><img src="./images/email.png"></a>
+						   <a href="#"><img src="./images/qq.png"></a>
+					   </div>
+					   <p><span>Tel&nbsp;&nbsp;:&nbsp;&nbsp;</span>18712760293</p>
+                       <p><span>E-Mail:</span>&nbsp;&nbsp;Lihk11844@126.com</p>
+                       <p><span>QQ&nbsp;&nbsp;:</span>&nbsp;&nbsp;1184416980</p>
+				  </div>
+				  <p class="copy-right">只为成功找方法，不为失败找借口，<br><a>我愿与您一起，共创辉煌！ </a></p>
+			 </div>
+
+			  <div class="col-md-6">
+				  <div class="footer-right">
+				 <div class="form">
+				 <form>
+					 <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+					 <input type="text" class="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}">
+					 <textarea rows="2" cols="70" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+					 <div class="clear"> </div>
+					 <input type="submit" value="SEND">
+				 </form>
+				 </div>
+				  </div>
+				  <div class="clear"></div>
+
+			  </div>
+		 </div>
+	 </div>
+	 <a class="up scroll" href="#top-top"><span> </span></a>
+
+ </div>
+ <div id="toTop">Top</div>
+
+ <script type="text/javascript">
+	$(function(){
+
+		$(window).scroll(function(){
+			var scrollTop = $(window).scrollTop();
+			var winHeight = $(window).height();
+
+			//nav
+			if(scrollTop >-1){
+				$(".header").css({
+					top:$(this).scrollTop()
+				})
+			}else{
+				$(".header").css({
+
+				})
+			}
+
+	 // totop
+			if(scrollTop > 600){
+				$("#toTop").css({
+					top:$(this).scrollTop() + winHeight - 80
+				}).show()
+			}else{
+				$("#toTop").hide();
+			}
+
+
+
+
+		})
+
+			$("#toTop").click(function(){
+				$("html,body").animate({
+					scrollTop:0
+				},600)
+			})
+
+
+
+
+	})
+
+
+
+</script>
+	<script type="text/javascript">
+		$(function(){
+
+
+
+		})
+	</script>
+ </body>
+ </html>
